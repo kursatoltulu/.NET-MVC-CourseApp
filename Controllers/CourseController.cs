@@ -6,8 +6,9 @@ namespace CourseApp.Controllers
     public class CourseController : Controller
     {
         public IActionResult Index()
-        {
-            return View();
+        {   
+            var model = Repository.Aplications;
+            return View(model);
         }
         
         public IActionResult Apply()
